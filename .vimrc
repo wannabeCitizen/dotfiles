@@ -1,4 +1,14 @@
+execute pathogen#infect()
+"Set up any mappings that come from pathogen plugins
+map <C-n> :NERDTreeToggle<CR>
+
+"Core Stuff from here on ----->
 syntax on
+
+set nocompatible
+filetype off
+
+filetype plugin indent on
 
 " Colors!
 syntax enable
