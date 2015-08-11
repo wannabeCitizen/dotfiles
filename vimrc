@@ -38,6 +38,9 @@ set smarttab
 set smartindent
 set autoindent
 
+"status line
+set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\ 
+
 "Search config
 set ignorecase
 set smartcase

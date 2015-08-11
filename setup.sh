@@ -9,5 +9,12 @@ git clone https://github.com/altercation/vim-colors-solarized.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone --recursive https://github.com/davidhalter/jedi-vim.git
 git clone https://github.com/vim-scripts/Align.git
+
+BASHRC="~/.bashrc"
+if [-e "$BASHRC"]
+then    
+    echo "export PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[01;30m\]\h\[\033[01;34m\] \w\[\033[0;36m\]$(__git_ps1 " %s") \[\033[01;30m\]>\[\033[00m\] '" >> ~/.bashrc
+fi
+
 echo "All done setting up your dotfiles!"
 exit 0
