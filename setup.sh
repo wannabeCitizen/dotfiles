@@ -2,7 +2,9 @@
 #Run this after cloning dotfiles into your repo
 mv vimrc ~/.vimrc
 
-mkdir ~/.vim && mkdir ~/.vim/bundle && mkdir ~/.vim/autoload
+mkdir ~/.vim 
+mkdir ~/.vim/bundle 
+mkdir ~/.vim/autoload
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 cd ~/.vim/bundle
 git clone https://github.com/altercation/vim-colors-solarized.git
@@ -17,4 +19,4 @@ if [[ -e "/home/$USER/$BASHRC" ]] ; then
 fi
 
 echo "All done setting up your dotfiles!"
-exit 0
+exit
